@@ -32,7 +32,7 @@ local Window = Library.CreateLib("Washiez fling all", "DarkTheme")
 local Tab = Window:NewTab("npc's GUI")
 local Section = Tab:NewSection("npc's GUI")
 
-Section:NewToggle("Toggle", "ToglInfo", function(state)
+Section:NewToggle("cycle thru every car", "ToglInfo", function(state)
     if state then
         _G.on = true
         while _G.on do
