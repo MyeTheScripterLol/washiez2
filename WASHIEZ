@@ -29,8 +29,8 @@ end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Washiez fling all", "DarkTheme")
-local Tab = Window:NewTab("npc's GUI")
-local Section = Tab:NewSection("npc's GUI")
+local Tab = Window:NewTab("Mye's GUI")
+local Section = Tab:NewSection("fling stuff")
 
 Section:NewToggle("cycle thru every car", "ToglInfo", function(state)
     if state then
@@ -49,6 +49,9 @@ end)
 
 Section:NewButton("Fling script (sexy)", "ButtonInfo", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+end)
+Section:NewButton("Inf Yield (sexy script)", "ButtonInfo", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 game.Players.PlayerAdded:Connect(function(player)
